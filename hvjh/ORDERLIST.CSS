@@ -1,0 +1,76 @@
+table {
+    width: 40%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 2px solid black;
+  }
+  
+  th, td {
+    padding: 1px;
+    text-align: CENTER;
+  }
+  
+  th {
+    background-color: #badbcf;
+  }
+  .fa-plus{
+    float: right;
+    position: absolute;
+    right:250px;
+     margin-left: 10px;
+     height: 150px;
+     width: 150px;
+     font-size: 30px;
+     top: 70px;
+}
+.fa-sign-out-alt{
+  float: right;
+ position: absolute;
+  right:10px;
+   margin-left: 30px;
+   height: 150px;
+   width: 150px;
+   font-size: 30px;
+   top: 70px;
+} 
+.profile-dropdown {
+  display: none;
+  font-size: x-large;
+  font-style: italic;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  background-color: rgb(13, 163, 233);
+}
+.dropdown-content a {
+  color: black;
+  padding: 15px 16px;
+  text-decoration:#cac8c8;
+  display: block;
+}
+.profile-dropdown .dropdown-content {display: block;}
+.dropdown:hover .profile-btn {background-color: #2980b9;}
+
+.profile-settings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.profile-icon {
+  
+  float: right;
+position: absolute;
+right:10px;
+margin-left: 30px;
+height: 150px;
+width: 150px;
+font-size: 30px;
+top: 70px;
+}
+.profile-icon:hover .profile-dropdown {
+  display: block;
+}

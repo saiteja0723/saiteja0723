@@ -1,0 +1,96 @@
+.fa-cart-shopping{
+    float: right;
+   position: absolute;
+    right:100px;
+     margin-left: 10px;
+     height: 150px;
+     width: 150px;
+     font-size: 30px;
+     top: 70px;
+ }
+.card container{
+    width: 25%;
+    padding: 5%;
+    margin-left: 200px;
+    margin-right: 200px;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.text1{
+    margin-left: 50px;
+    padding-right: 10%;
+    margin-right: 20%;
+    font-weight: 1000;
+    font-style: bold;
+    font-size: 40px;
+}
+.text2{
+    margin-left: 20%;
+    padding-bottom: 5px;
+    margin-right: 80%;
+    font-weight: 1000;
+    font-style: bold;
+    font-size: 30px; 
+ 
+}
+.text3{
+    margin-right: 50%;
+    padding-bottom: 10px;   
+    font-style: bold;
+    font-size: 30px;
+    padding-left: 90%; 
+    float: left;   
+}
+.text4{
+    margin-left: 140px;  
+    font-style: bold;
+    font-size: 30px; 
+    padding-left: 70%; 
+    float: left;   
+}
+.row{
+    display: flex;
+}
+.text5{
+    padding-left: 150%;
+}
+button{
+    width: 200px;
+    height:50px;
+    font-size: 100%;
+    background-color: goldenrod;
+    border: none;
+    margin-left: 160%;
+    align-items: center;
+}
+.profile-dropdown {
+    display: none;
+    font-size: x-large;
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    background-color: rgb(13, 163, 233);
+  }
+  .profile-settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile-icon {
+    
+    float: right;
+position: absolute;
+right:10px;
+ margin-left: 30px;
+ height: 150px;
+ width: 150px;
+ font-size: 30px;
+ top: 70px;
+}
+.profile-icon:hover .profile-dropdown {
+    display: block;
+}
+ 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="practise.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result</title>
+</head>
+<body>
+<h2>Student Result</h2>
+<h2>student name:Ravi</h2>
+<table>
+    <tr>
+        <th>Subject</th>
+        <th>Marks</th>
+    </tr>
+    <tr>
+        <td>Maths</td>
+        <td><input type="number" id="maths" min="0" max="100" oninput="calculateResult()"></td>
+    </tr>
+    <tr>
+        <td>Physics</td>
+        <td><input type="number" id="physics" min="0" max="100" oninput="calculateResult()"></td>
+    </tr>
+    <tr>
+        <td>Chemistry</td>
+        <td><input type="number" id="chemistry" min="0" max="100" oninput="calculateResult()"></td>
+    </tr>
+    <tr>
+        <td>Total Result:</td>
+        <td colspan="2"><span id="totalResult"></span></td>
+    </tr>
+</table>
+<script>
+    function calculateResult() {
+        var mathsMarks = parseInt(document.getElementById("maths").value);
+        var physicsMarks = parseInt(document.getElementById("physics").value);
+        var chemistryMarks = parseInt(document.getElementById("chemistry").value);
+        var totalMarks = mathsMarks + physicsMarks + chemistryMarks;
+        var percentage = null;
+
+        if (mathsMarks >= 30 && physicsMarks >= 30 && chemistryMarks >= 30) {
+            percentage = (totalMarks / 300) * 100;
+        }
+
+        var overallResult = calculateOverallmarks(mathsMarks, physicsMarks, chemistryMarks);
+
+        document.getElementById("totalResult").innerText = "Total Marks: " + totalMarks + " | Percentage: " + (percentage ? percentage.toFixed(2) + "%" : "null") + " | Total Result: " + overallResult;
+    }
+    
+    function calculateOverallmarks(mathsMarks, physicsMarks, chemistryMarks) {
+        if (mathsMarks < 30 || physicsMarks < 30 || chemistryMarks < 30) {
+            return "Failed";
+        } else {
+            return "Passed";
+        }
+    }
+    document.addEventListener("input", calculateResult);
+</script>
+</body>
+</html>
